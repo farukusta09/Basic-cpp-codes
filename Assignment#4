@@ -1,0 +1,107 @@
+/*
+Ömer Faruk USTA
+1306200032
+05.12.2021
+*/
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  int r,i,j;
+  cout<<"Enter number of rows: ";
+  cin>>r;
+  
+  for(i=1;i<=r;i++)
+  {
+    for(j=1;j<=i;j++)
+    cout<<"*";
+    for(j=1;j<=2*(r-i);j++)
+    cout<<"X";
+    for(j=1;j<=i;j++)
+    cout<<"*";
+    cout<<"\n";
+  }
+
+
+for(i=r;i>=1;i--)
+  {
+    for(j=1;j<=i;j++)
+    cout<<"*";
+    for(j=1;j<=2*(r-i);j++)
+    cout<<"X";
+    for(j=1;j<=i;j++)
+    cout<<"*";
+    cout<<"\n";
+  }
+
+  int number2;
+    cout << "Please enter number of rows:"<<endl;
+    cin >> number2;
+
+    for (int m = 1; m <= number2; m++){   
+        
+        for (int n = 2*m; n <= (2*number2)-1; n++) {
+            cout << " ";  
+        }
+        for (int n = 1; n <= m; n++) {
+            cout << "*";
+        }
+        cout << endl << endl;}
+   
+ for (int m = 1; m <= (number2-1); m++) {   
+       
+	 for (int n = 1; n <= 2*m; n++){
+            cout << " ";
+        }
+        for (int n = m; n <= ((number2)-1); n++){
+            cout << "*";
+        }
+        cout << endl << endl;}
+
+    int number3;
+
+    cout << "Please enter number of the row: "<<endl;
+    cin >> number3;
+
+    for (int m = 1; m <= 3; m++){
+        for (int n = m; n <= 2 ; n++){
+            cout << " ";
+        }
+        for (int n = 1; n <= (number3-6)+2*m; n++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    for (int m = 1; m <= 1; m++){
+        for (int n = 1; n <= 1; n++){
+            cout << " ";
+        }
+        for (int n = 1; n <= number3-2; n++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    for (int m = 1; m <= 3; m++){
+        for (int n = m; n <= 2 ; n++){
+            cout << " ";
+        }
+        for (int n = 1; n <= (number3-6)+2*m; n++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    for (int m = 1; m <= 2; m++){
+        for (int n = 1; n <= m; n++){
+            cout << " ";
+        }
+        for (int n = 1; n <= number3-2*m; n++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+  return 0;
+}
