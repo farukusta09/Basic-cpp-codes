@@ -1,0 +1,45 @@
+/*
+Ömer Faruk Usta
+1306200032
+07-12-2021
+*/
+#include<iostream>
+
+using namespace std;
+
+void CALCULATEAGE(int presentDay, int presentMonth, int presentYear, int birthDay, int birthMonth, int birthYear);
+
+int main(){
+    int presDay, presMon, presYear;
+    int birtDay, birtMon, birtYear;
+
+    cout << "Please enter today's date(dd mm yyyy): " << endl;
+    cin >> presDay >> presMon >> presYear;
+
+    cout << "Please enter your birthday(dd mm yyyy): " << endl;
+    cin >> birtDay >> birtMon >> birtYear;
+
+    CALCULATEAGE(presDay, presMon, presYear, birtDay, birtMon, birtYear);
+
+    return 0;
+}
+
+void CALCULATEAGE(int presentDay, int presentMonth, int presentYear, int birthDay, int birthMonth, int birthYear){
+    int day, month, year;
+
+    if (birthDay > presentDay){
+        presentDay = presentDay + 30;
+        presentMonth = presentMonth - 1;}
+    
+    if (birthMonth > presentMonth){
+        presentYear = presentYear - 1;
+        presentMonth = presentMonth + 12; }
+
+    day = presentDay - birthDay;
+    month = presentMonth - birthMonth;
+    year = presentYear - birthYear;
+
+    cout << "Your age is: " << year << " years " << month << " months " << day << " days" << endl;
+
+    return;
+}
