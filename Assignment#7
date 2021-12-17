@@ -1,0 +1,37 @@
+
+/*
+Lab Assignment#7
+17-12-2021
+Ömer Faruk Usta
+1306200032
+*/
+#include<iostream>
+using  namespace std;
+int main() {
+
+	int i, number, prime = 0;
+	bool T;
+	
+	cout << "please enter an integer:" << endl;
+	cin >> number;
+	for (i = 2; i < number; i++) {
+		if (number % i == 0) { prime++; }
+		break;
+	}
+	
+		
+	
+	if (number < 2) {
+		prime++;
+		
+	}
+	T = (prime == 0);
+	if (T==1) {
+		cout << number<< " is a prime number..." << endl;
+	}
+	
+	else {
+		cout << number << " is not a prime number..."<<endl;
+	}
+
+}
