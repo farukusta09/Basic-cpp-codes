@@ -1,0 +1,53 @@
+/*
+Ömer Faruk Usta
+10-12-2021
+1306200032
+Assignment#6
+*/
+#include<iostream>
+using namespace std;
+
+float division(float a, float b) {
+    float quotient = a / b;
+    cout << a << " / " << b << " = " << quotient << endl;
+
+    return a / b;
+}
+int addition(int a, int b) {
+    int sum = a + b;
+    cout << a << " + " << b << " = " << sum << endl;
+
+    return a + b;
+}
+int subtraction(int a, int b) {
+    int difference = a - b;
+    cout << a << " - " << b << " = " << difference << endl;
+
+    return a - b;
+}
+int multiplication(int a, int b) {
+    int product = a * b;
+    cout << a << " * " << b << " = " << product << endl;
+
+    return a * b;
+}
+int main() {
+    int number1, number2;
+
+    cout << "Please enter two integers: " << endl;
+    cin >> number1 >> number2;
+
+    addition(number1, number2);
+    subtraction(number1, number2);
+    multiplication(number1, number2);
+    division(number1, number2);
+
+    return 0;
+}
+
+
+
+
+
+
+
