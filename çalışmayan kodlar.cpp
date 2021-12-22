@@ -85,3 +85,26 @@ int main() {
 	}
 }
 */
+/*#include<iostream>
+using namespace std;
+int main() {
+	int giriş, boşluk, yıldız;
+	boşluk = giriş - 1;
+	yıldız = 1;
+	cout << "bir değer giriniz\n";
+	cin >> giriş;
+	for (int j = 0; j < giriş; j++) {
+		for (int i = boşluk; i > 0; i--) {
+			cout << " ";
+
+		}
+		for (int i = 0; i < yıldız; i++) {
+			cout << "*";
+
+		}
+		boşluk--;
+		yıldız += 2;
+		cout << endl;
+
+	}
+}*/
